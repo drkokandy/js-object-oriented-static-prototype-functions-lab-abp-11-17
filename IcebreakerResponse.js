@@ -2,8 +2,12 @@ function IcebreakerResponse(email){
   this.email = email
 }
 
-IcebreakerResponse.BatchCreate = function(data) {
-  return data.map(function(userData){
-    return new IcebreakerResponse(userData[0], userData[1])
+IcebreakerResponse.BatchCreate = function(emails) {
+// emails = ["1@temp.co", '2@yourmom.com']
+// let icebreakers = []
+
+  return emails.map(function(email){
+    return new IcebreakerResponse(email)
+    // so it's really just that I had a second argument here whoops
   })
 }
