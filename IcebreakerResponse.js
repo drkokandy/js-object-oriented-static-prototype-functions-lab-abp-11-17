@@ -4,7 +4,6 @@ function IcebreakerResponse(email){
 
 IcebreakerResponse.BatchCreate = function(emails) {
 // emails = ["1@temp.co", '2@yourmom.com']
-// let icebreakers = []
 
   return emails.map(function(email){
     return new IcebreakerResponse(email)
